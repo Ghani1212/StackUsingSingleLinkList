@@ -24,7 +24,25 @@ namespace StackUsingSingleLinkList
         {
             top = null;
         }
+        bool empty()
+        {
+            if (top == null)
+                return (true);
+            else
+                return (false);
+        }
+        public void push(int element)
+        {
+            node fresh;
+            fresh = new node(element, null);
+
+            fresh.next = top;
+            top = fresh;
+            Console.WriteLine("\n" + element + "pushed");
+        }
+
     }
+    
     internal class Program
     {
         static void Main(string[] args)
