@@ -47,12 +47,38 @@ namespace StackUsingSingleLinkList
             top = top.next; // make top point to the next node is squence
         }
 
-    }
-    
-    internal class Program
-    {
+        public void display()
+        {
+            node tmp;
+            if (empty())
+                Console.WriteLine("\nStack is Empty");
+            else
+            {
+                for (tmp = top; tmp != null; tmp = tmp.next)
+                {
+                    Console.WriteLine(tmp.info);
+                }
+            }
+        }
         static void Main(string[] args)
         {
+            Stack s = new Stack();
+            while (true)
+            {
+                Console.WriteLine();
+                Console.WriteLine("\n***stack Menu***");
+                Console.WriteLine("1. Push ");
+                Console.WriteLine("2. Pop ");
+                Console.WriteLine("3. Display ");
+                Console.WriteLine("4. Exit ");
+                Console.Write("\nEnter your choice ");
+                string input = Console.ReadLine();
+                char ch = Convert.ToChar(input == "" ? "0" : input);
+                switch (ch)
+                {
+
+                }
+            }
         }
     }
 }
