@@ -89,6 +89,9 @@ namespace StackUsingSingleLinkList
                         }
                         s.pop();
                         break;
+                    case '3':
+                        s.display();
+                        break;
 
                 }
             }
